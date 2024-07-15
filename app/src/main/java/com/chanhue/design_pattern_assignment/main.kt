@@ -13,14 +13,13 @@ fun main(){
 
 
 
-    val text = "Hello! my name is chan"
-    val width = 3
+    val text = "Hello! World"
+    val width = 30
 
     val editor = TextEditor(LeftAlignmentStrategy())
-    Logger.log("hi")
 
     editor.setAlignmentStrategy(RightAlignmentStrategy())
-    Logger.log("hi")
 
     editor.setAlignmentStrategy(CenterAlignmentStrategy())
+    println("Center Aligned:\n${editor.publishText(text, width)}")
 }
