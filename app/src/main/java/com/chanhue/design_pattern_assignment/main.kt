@@ -14,7 +14,7 @@ fun main(){
 
 
     val text = "Hello! World"
-    val width = 30
+    val width = 3
 
     val editor = TextEditor(LeftAlignmentStrategy())
 
