@@ -4,7 +4,7 @@ import com.chanhue.design_pattern_assignment.editor.TextEditor
 import com.chanhue.design_pattern_assignment.strategy.CenterAlignmentStrategy
 import com.chanhue.design_pattern_assignment.strategy.LeftAlignmentStrategy
 import com.chanhue.design_pattern_assignment.strategy.RightAlignmentStrategy
-// design pattern
+
 fun main(){
 
 
@@ -13,13 +13,17 @@ fun main(){
 
 
 
-    val text = "Hello! World"
+    val str = "Hello! World"
     val width = 30
 
     val editor = TextEditor(LeftAlignmentStrategy())
 
+
+    println("왼쪽 정렬: ${editor.publishText(str, width)}")
+
     editor.setAlignmentStrategy(RightAlignmentStrategy())
+    println("오른쪽 정렬: ${editor.publishText(str, width)}")
 
     editor.setAlignmentStrategy(CenterAlignmentStrategy())
-    println("Center Aligned:\n${editor.publishText(text, width)}")
+    println("가운데 정렬: ${editor.publishText(str, width)}")
 }
