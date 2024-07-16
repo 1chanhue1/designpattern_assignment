@@ -4,7 +4,7 @@ import com.chanhue.design_pattern_assignment.editor.TextEditor
 import com.chanhue.design_pattern_assignment.strategy.CenterAlignmentStrategy
 import com.chanhue.design_pattern_assignment.strategy.LeftAlignmentStrategy
 import com.chanhue.design_pattern_assignment.strategy.RightAlignmentStrategy
-
+//strategy_pattern
 fun main(){
 
 
